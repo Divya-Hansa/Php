@@ -26,15 +26,27 @@
     }
 
     function onlyNumber($text){
+        $max = 1e100;
+        $min = -1e100;
+
         while(true){
             echo $text;
             $input = trim(fgets(STDIN));
-            if (is_numeric($input)){
-                return $input;
+
+            if (!is_numeric($input)) {
+                echo "Enter a valid number.\n";
+                continue;
             }
-            echo "Enter valid number";
+
+            if ($input > $max || $input < $min) {
+                echo "Number too large or too small.\n";
+                continue;
+            }
+
+            return $input;
         }
     }
+
     
     while(true){    
         echo "Select an Option (1, 2, 3, 4 or q to quit) \n";
