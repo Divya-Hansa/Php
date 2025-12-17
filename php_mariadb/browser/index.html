@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Order Management Dashboard</title>
+    <style>
+    </style>
+</head>
+<body class="py-12 flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-black bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text mb-4">
+                Order Management
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            
+            <a href="list_orders.php" class="card-hover group">
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-2 border-blue-100 hover:border-blue-300">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-8 rounded-2xl font-bold text-lg text-center hover:from-blue-700 hover:to-blue-800 transform group-hover:scale-105 transition-all">
+                        List Orders
+                    </div>
+                </div>
+            </a>
+            
+            <a href="view_order.php" class="card-hover group">
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-2 border-red-100 hover:border-red-300">
+                    <div class="bg-gradient-to-r from-red-600 to-red-700 text-white py-4 px-8 rounded-2xl font-bold text-lg text-center hover:from-red-700 hover:to-red-800 transform group-hover:scale-105 transition-all">
+                       View Order Details 
+                    </div>
+                </div>
+            </a>
+
+            <a href="createOrEditOrder.php" class="card-hover group">
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-2 border-green-100 hover:border-green-300">
+                    <div class="bg-gradient-to-r from-green-600 to-green-700 text-white py-4 px-8 rounded-2xl font-bold text-lg text-center hover:from-green-700 hover:to-green-800 transform group-hover:scale-105 transition-all">
+                       Create New Order 
+                    </div>
+                </div>
+            </a>
+
+            <a href="EditOrderDetails.php" class="card-hover group">
+                <div class="bg-white rounded-3xl p-10 shadow-xl border-2 border-purple-100 hover:border-purple-300">
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-700 text-white py-4 px-8 rounded-2xl font-bold text-lg text-center hover:from-purple-700 hover:to-purple-800 transform group-hover:scale-105 transition-all">
+                        Update Order Details 
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
