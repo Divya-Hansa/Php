@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $discounts
     );
 
-    // Redirect to list after save
+   
     header("Location: list_orders.php");
     exit;
 }
