@@ -92,7 +92,6 @@ function createEditOrder(
         ";
         $conn->query($sql);
 
-        /* Remove existing products */
         $conn->query("DELETE FROM order_details WHERE order_id = $orderId");
     }
 
@@ -115,7 +114,7 @@ function createEditOrder(
 }
 
 function deleteOrder($conn, $orderId) {
-    $orderId = intval($orderId); // sanitize
+    $orderId = intval($orderId); 
 
     if ($orderId <= 0) return false;
 
